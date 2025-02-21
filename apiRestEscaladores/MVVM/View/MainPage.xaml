@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="apiRestEscaladores.MainPage">
+
+    <VerticalStackLayout Padding="20">
+        <Label Text="Lista de Escaladores"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <!-- Lista de escaladores -->
+        <ListView ItemsSource="{Binding Escaladores}"
+          SelectedItem="{Binding EscaladorSeleccionado, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <Label Text="{Binding Name}" FontSize="18" WidthRequest="150"/>
+                            <Label Text="{Binding Age}" FontSize="18" WidthRequest="50"/>
+                            <Label Text="{Binding MountainGroup}" FontSize="18" WidthRequest="100"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Botones CRUD -->
+        <Button Text="Cargar Escaladores"
+                Command="{Binding CargarEscaladoresCommand}"
+                BackgroundColor="LightBlue"/>
+
+        <Button Text="Agregar Escalador"
+                Command="{Binding AgregarEscaladorCommand}"
+                BackgroundColor="LightGreen"/>
+
+        <Button Text="Editar Escalador"
+                Command="{Binding EditarEscaladorCommand}"
+                BackgroundColor="LightYellow"/>
+
+        <Button Text="Eliminar Escalador"
+                Command="{Binding EliminarEscaladorCommand}"
+                BackgroundColor="LightCoral"/>
+    </VerticalStackLayout>
+
+</ContentPage>
