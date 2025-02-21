@@ -27,6 +27,7 @@ namespace apiRestEscaladores.MVVM.ModelView
         public ICommand AgregarEscaladorCommand { get; }
         public ICommand EditarEscaladorCommand { get; }
         public ICommand EliminarEscaladorCommand { get; }
+        public ICommand ResetearVistaCommand { get; }
 
         public MainPageVM()
         {
@@ -34,6 +35,8 @@ namespace apiRestEscaladores.MVVM.ModelView
             AgregarEscaladorCommand = new Command(async () => await AgregarEscalador());
             EditarEscaladorCommand = new Command(async () => await EditarEscalador());
             EliminarEscaladorCommand = new Command(async () => await EliminarEscalador());
+            ResetearVistaCommand = new Command(() => EscaladorSeleccionado = null);
+
         }
 
         private async Task CargarEscaladores()

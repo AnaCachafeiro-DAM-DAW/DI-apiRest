@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-02-21T19:06:41.114</Modified>
+      <Modified>2025-02-21T20:11:55.032</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-02-21T19:06:40.860</Modified>
+      <Modified>2025-02-21T20:11:54.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\apiRestEscaladores.runtimeconfig.json">
       <PackagePath>apiRestEscaladores.runtimeconfig.json</PackagePath>
-      <Modified>2025-02-21T19:06:40.728</Modified>
+      <Modified>2025-02-21T20:11:54.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\apiRestEscaladores.dll">
       <PackagePath>apiRestEscaladores.dll</PackagePath>
-      <Modified>2025-02-21T19:06:40.145</Modified>
+      <Modified>2025-02-21T20:11:54.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>apiRestEscaladores.exe</PackagePath>
-      <Modified>2025-02-21T19:06:40.167</Modified>
+      <Modified>2025-02-21T20:11:54.489</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -56,23 +56,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2025-02-21T19:05:16.773</Modified>
+      <Modified>2025-02-21T20:11:52.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2025-02-21T19:05:16.801</Modified>
+      <Modified>2025-02-21T20:11:52.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2025-02-21T19:05:16.828</Modified>
+      <Modified>2025-02-21T20:11:52.913</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2025-02-21T19:05:16.864</Modified>
+      <Modified>2025-02-21T20:11:52.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2025-02-21T19:05:17.048</Modified>
+      <Modified>2025-02-21T20:11:53.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -82,213 +82,213 @@
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2025-02-21T19:02:49.619</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
-      <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-02-21T19:05:18.156</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
-      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.143</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
-      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.143</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
-      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.143</Modified>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.139</Modified>
+      <Modified>2025-02-21T20:11:53.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
-      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.139</Modified>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.151</Modified>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.796</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.151</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.150</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.150</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.150</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.153</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.152</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.151</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.152</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.152</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
-      <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.156</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
-      <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.155</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
-      <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.155</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
-      <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.155</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
-      <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.154</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
-      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.154</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
-      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.154</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
-      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.153</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
-      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.154</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
-      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.153</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
-      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.146</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
-      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.146</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
-      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.146</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
-      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.145</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
-      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.145</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
-      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.147</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
-      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.147</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
-      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.147</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
-      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.147</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
-      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.146</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
-      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.149</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
-      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.149</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
-      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.148</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
-      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.148</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
-      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.148</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
-      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.145</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
-      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.144</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
-      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.144</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
-      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.144</Modified>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.144</Modified>
+      <Modified>2025-02-21T20:11:53.796</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.157</Modified>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.796</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.157</Modified>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.797</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.157</Modified>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.797</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.157</Modified>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.797</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.801</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+      <PackagePath>appiconLogo.scale-100.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
+      <Modified>2025-02-21T20:11:53.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2025-02-21T19:05:18.156</Modified>
+      <Modified>2025-02-21T20:11:53.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+      <Modified>2025-02-21T20:11:53.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\apiRestEscaladores.deps.json">
       <PackagePath>apiRestEscaladores.deps.json</PackagePath>
-      <Modified>2025-02-21T19:06:40.714</Modified>
+      <Modified>2025-02-21T20:11:54.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ana\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

@@ -1,0 +1,1 @@
+C:\Users\Ana\source\repos\apiRestEscaladores\apiRestEscaladores\apiRestEscaladores.csproj;x64
