@@ -13,8 +13,8 @@ namespace apiRestEscaladores.MVVM.ModelView
 
         private readonly JsonSerializerOptions _jsonOptions = new()
         {
-            PropertyNameCaseInsensitive = true,
-            WriteIndented = true
+            PropertyNameCaseInsensitive = true, // Ignorar mayúsculas/minúsculas
+            WriteIndented = true               // Formatear JSON con indentación
         };
 
         // GET - Obtener todos los escaladores
@@ -23,10 +23,16 @@ namespace apiRestEscaladores.MVVM.ModelView
             try
             {
                 HttpResponseMessage response = await _httpClient.GetAsync(BaseUrl);
+                string json = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Respuesta JSON: {json}"); // Depuración
+
                 if (response.IsSuccessStatusCode)
                 {
-                    string json = await response.Content.ReadAsStringAsync();
                     return JsonSerializer.Deserialize<List<Escalador>>(json, _jsonOptions) ?? new List<Escalador>();
+                }
+                else
+                {
+                    Console.WriteLine($"Error en la respuesta GET: {response.StatusCode}");
                 }
             }
             catch (Exception ex)
@@ -54,6 +60,7 @@ namespace apiRestEscaladores.MVVM.ModelView
             }
         }
 
+
         // PUT - Editar un escalador existente
         public async Task<bool> UpdateEscaladorAsync(Escalador escalador)
         {
@@ -73,7 +80,7 @@ namespace apiRestEscaladores.MVVM.ModelView
         }
 
         // DELETE - Eliminar un escalador
-        public async Task<bool> DeleteEscaladorAsync(string id)  // Cambiado a string
+        public async Task<bool> DeleteEscaladorAsync(string id)
         {
             try
             {

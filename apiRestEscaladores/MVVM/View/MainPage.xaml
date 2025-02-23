@@ -1,72 +1,85 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="apiRestEscaladores.MainPage">
 
-    <VerticalStackLayout Padding="20">
-        <Label Text="Lista de Escaladores"
-               FontSize="24"
-               FontAttributes="Bold"
-               HorizontalOptions="Center" />
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
 
-        <!-- Lista de escaladores -->
-        <ListView ItemsSource="{Binding Escaladores}"
-                  SelectedItem="{Binding EscaladorSeleccionado, Mode=TwoWay}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Horizontal" Padding="10">
-                            <Label Text="{Binding Name}" FontSize="18" WidthRequest="150"/>
-                            <Label Text="{Binding Age}" FontSize="18" WidthRequest="50"/>
-                            <Label Text="{Binding Id}" FontSize="18" WidthRequest="50"/>
-                            <Label Text="{Binding MountainGroup}" FontSize="18" WidthRequest="150"/>
-                            <Label Text="{Binding Federado}" FontSize="18" WidthRequest="50"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            <!-- Botón para cargar escaladores -->
+            <Button Text="VER LISTA ESCALADORES"
+                    Command="{Binding CargarEscaladoresCommand}" 
+                    BackgroundColor="#6200EE"
+                    Padding="10,5"
+                    CornerRadius="30"
+                    FontSize="16"
+                    BorderWidth="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
 
-        <!-- Sección de edición -->
-        <Frame Padding="10" HasShadow="True" CornerRadius="10" IsVisible="{Binding EscaladorSeleccionado, Converter={StaticResource NullToBoolConverter}}">
-            <Label Text="Detalles del Escalador" FontSize="20" FontAttributes="Bold"/>
-            <Grid ColumnDefinitions="*,2*" RowSpacing="5">
-                <Label Text="Nombre:" Grid.Row="0" Grid.Column="0"/>
-                <Entry Text="{Binding EscaladorSeleccionado.Name}" Grid.Row="0" Grid.Column="1"/>
+            <!-- Lista de escaladores -->
+            <Label Text="ESCALADORES 2025" FontSize="20" TextColor="#6200EE" FontAttributes="Bold" Padding="10"/>
 
-                <Label Text="Edad:" Grid.Row="1" Grid.Column="0"/>
-                <Entry Text="{Binding EscaladorSeleccionado.Age}" Grid.Row="1" Grid.Column="1" Keyboard="Numeric"/>
+            <CollectionView ItemsSource="{Binding Escaladores}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="Gray" Padding="10" Margin="5" CornerRadius="10" BackgroundColor="LightGray">
+                            <StackLayout>
+                                <!-- Nombre -->
+                                <Label Text="{Binding Name}" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
 
-                <Label Text="Grupo Montañero:" Grid.Row="2" Grid.Column="0"/>
-                <Entry Text="{Binding EscaladorSeleccionado.MountainGroup}" Grid.Row="2" Grid.Column="1"/>
+                                <!-- Edad -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Edad: " FontSize="18" TextColor="Black"/>
+                                    <Label Text="{Binding Age}" FontSize="18" TextColor="Black"/>
+                                </StackLayout>
 
-                <Label Text="Experiencia (años):" Grid.Row="3" Grid.Column="0"/>
-                <Entry Text="{Binding EscaladorSeleccionado.Experience}" Grid.Row="3" Grid.Column="1" Keyboard="Numeric"/>
+                                <!-- Grupo de montaña -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Grupo de Montaña: " FontSize="18" TextColor="Black"/>
+                                    <Label Text="{Binding MountainGroup}" FontSize="18" TextColor="Black"/>
+                                </StackLayout>
 
-                <Label Text="Federado:" Grid.Row="4" Grid.Column="0"/>
-                <Switch IsToggled="{Binding EscaladorSeleccionado.Federado}" Grid.Row="4" Grid.Column="1"/>
-            </Grid>
+                                <!-- Experiencia -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Años de experiencia: " FontSize="18" TextColor="Black"/>
+                                    <Label Text="{Binding Experience}" FontSize="18" TextColor="Black"/>
+                                </StackLayout>
 
-            <Button Text="Actualizar" 
-                    Command="{Binding EditarEscaladorCommand}" 
-                    BackgroundColor="LightYellow"/>
-        </Frame>
+                                <!-- Federado -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Federado: " FontSize="18" TextColor="Black"/>
+                                    <Label Text="{Binding Federado}" FontSize="18" TextColor="Black"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
-        <!-- Botones CRUD -->
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
-            <Button Text="Cargar Escaladores"
-                    Command="{Binding CargarEscaladoresCommand}"
-                    BackgroundColor="LightBlue"/>
-            <Button Text="Agregar Nuevo"
+            <!-- Formulario para ingresar nuevo escalador -->
+            <Label Text="Añadir Nuevo Escalador:" FontSize="20" Padding="10"/>
+
+            <Entry Placeholder="Nombre" Text="{Binding NuevoEscalador.Name}" />
+            <Entry Placeholder="Edad" Keyboard="Numeric" Text="{Binding NuevoEscalador.Age}" />
+            <Entry Placeholder="Grupo de Montaña" Text="{Binding NuevoEscalador.MountainGroup}"/>
+            <Entry Placeholder="Experiencia (Años)" Keyboard="Numeric" Text="{Binding NuevoEscalador.Experience}"/>
+
+            <!-- Mostrar un CheckBox para Federado -->
+            <CheckBox IsChecked="{Binding Federado}" />
+            <Label Text="{Binding FederadoTexto}" FontSize="18" TextColor="Black"/>
+            
+        
+            <!-- Botón para añadir escalador -->
+            <Button Text="Añadir Nuevo Escalador"
                     Command="{Binding AgregarEscaladorCommand}"
-                    BackgroundColor="LightGreen"/>
-            <Button Text="Eliminar"
-                    Command="{Binding EliminarEscaladorCommand}"
-                    BackgroundColor="LightCoral"/>
-            <Button Text="Resetear"
-                    Command="{Binding ResetearVistaCommand}"
-                    BackgroundColor="Gray"/>
-        </StackLayout>
-    </VerticalStackLayout>
+                    BackgroundColor="#6200EE"
+                    Padding="10,5"
+                    CornerRadius="30"
+                    FontSize="16"
+                    BorderWidth="0"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
 
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
