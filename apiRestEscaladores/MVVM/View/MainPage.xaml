@@ -29,25 +29,25 @@
 
                                 <!-- Edad -->
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text="Edad: " FontSize="18" TextColor="Black"/>
+                                    <Label Text="Edad: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
                                     <Label Text="{Binding Age}" FontSize="18" TextColor="Black"/>
                                 </StackLayout>
 
                                 <!-- Grupo de montaña -->
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text="Grupo de Montaña: " FontSize="18" TextColor="Black"/>
+                                    <Label Text="Grupo de Montaña: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
                                     <Label Text="{Binding MountainGroup}" FontSize="18" TextColor="Black"/>
                                 </StackLayout>
 
                                 <!-- Experiencia -->
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text="Años de experiencia: " FontSize="18" TextColor="Black"/>
+                                    <Label Text="Años de experiencia: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
                                     <Label Text="{Binding Experience}" FontSize="18" TextColor="Black"/>
                                 </StackLayout>
 
                                 <!-- Federado -->
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text="Federado: " FontSize="18" TextColor="Black"/>
+                                    <Label Text="Federado: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
                                     <Label Text="{Binding Federado}" FontSize="18" TextColor="Black"/>
                                 </StackLayout>
                             </StackLayout>
@@ -57,7 +57,7 @@
             </CollectionView>
 
             <!-- Formulario para ingresar nuevo escalador -->
-            <Label Text="Añadir Nuevo Escalador:" FontSize="20" Padding="10"/>
+            <Label Text="Zona para Añadir Nuevo Escalador:" FontSize="20" FontAttributes="Bold" TextColor="Black" Padding="10" Margin="5"/>
 
             <Entry Placeholder="Nombre" Text="{Binding NuevoEscalador.Name}" />
             <Entry Placeholder="Edad" Keyboard="Numeric" Text="{Binding NuevoEscalador.Age}" />
@@ -65,18 +65,20 @@
             <Entry Placeholder="Experiencia (Años)" Keyboard="Numeric" Text="{Binding NuevoEscalador.Experience}"/>
 
             <!-- Mostrar un CheckBox para Federado -->
-            <CheckBox IsChecked="{Binding Federado}" />
-            <Label Text="{Binding FederadoTexto}" FontSize="18" TextColor="Black"/>
-            
-        
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Label Text="Federado:" FontSize="18" TextColor="Black" VerticalOptions="Center"/>
+                <CheckBox IsChecked="{Binding NuevoEscalador.Federado}" VerticalOptions="Center"/>
+            </StackLayout>
+
             <!-- Botón para añadir escalador -->
             <Button Text="Añadir Nuevo Escalador"
                     Command="{Binding AgregarEscaladorCommand}"
                     BackgroundColor="#6200EE"
-                    Padding="10,5"
+                    Padding="10.5"
                     CornerRadius="30"
                     FontSize="16"
                     BorderWidth="0"
+                    Margin="10"
                     HorizontalOptions="Center"
                     VerticalOptions="Center" />
 

@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{C54696BF-9569-4101-A022-6AF45046C6E9}|apiRestEscaladores\\apiRestEscaladores.csproj|solutionrelative:apirestescaladores\\mvvm\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C54696BF-9569-4101-A022-6AF45046C6E9}|apiRestEscaladores\\apiRestEscaladores.csproj|c:\\users\\ana\\source\\repos\\apirestescaladores\\apirestescaladores\\mvvm\\modelo\\escalador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C54696BF-9569-4101-A022-6AF45046C6E9}|apiRestEscaladores\\apiRestEscaladores.csproj|solutionrelative:apirestescaladores\\mvvm\\modelo\\escalador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C54696BF-9569-4101-A022-6AF45046C6E9}|apiRestEscaladores\\apiRestEscaladores.csproj|c:\\users\\ana\\source\\repos\\apirestescaladores\\apirestescaladores\\mvvm\\modelview\\escaladorservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C54696BF-9569-4101-A022-6AF45046C6E9}|apiRestEscaladores\\apiRestEscaladores.csproj|solutionrelative:apirestescaladores\\mvvm\\modelview\\escaladorservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C54696BF-9569-4101-A022-6AF45046C6E9}|apiRestEscaladores\\apiRestEscaladores.csproj|c:\\users\\ana\\source\\repos\\apirestescaladores\\apirestescaladores\\mvvm\\modelview\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C54696BF-9569-4101-A022-6AF45046C6E9}|apiRestEscaladores\\apiRestEscaladores.csproj|solutionrelative:apirestescaladores\\mvvm\\modelview\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C54696BF-9569-4101-A022-6AF45046C6E9}|apiRestEscaladores\\apiRestEscaladores.csproj|c:\\users\\ana\\source\\repos\\apirestescaladores\\apirestescaladores\\mvvm\\modelo\\escalador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C54696BF-9569-4101-A022-6AF45046C6E9}|apiRestEscaladores\\apiRestEscaladores.csproj|solutionrelative:apirestescaladores\\mvvm\\modelo\\escalador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,43 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 266,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Escalador.cs",
               "DocumentMoniker": "C:\\Users\\Ana\\source\\repos\\apiRestEscaladores\\apiRestEscaladores\\MVVM\\Modelo\\Escalador.cs",
               "RelativeDocumentMoniker": "apiRestEscaladores\\MVVM\\Modelo\\Escalador.cs",
               "ToolTip": "C:\\Users\\Ana\\source\\repos\\apiRestEscaladores\\apiRestEscaladores\\MVVM\\Modelo\\Escalador.cs",
               "RelativeToolTip": "apiRestEscaladores\\MVVM\\Modelo\\Escalador.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA/wBMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T22:58:45.567Z",
+              "WhenOpened": "2025-02-24T21:33:15.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EscaladorServicio.cs",
-              "DocumentMoniker": "C:\\Users\\Ana\\source\\repos\\apiRestEscaladores\\apiRestEscaladores\\MVVM\\ModelView\\EscaladorServicio.cs",
-              "RelativeDocumentMoniker": "apiRestEscaladores\\MVVM\\ModelView\\EscaladorServicio.cs",
-              "ToolTip": "C:\\Users\\Ana\\source\\repos\\apiRestEscaladores\\apiRestEscaladores\\MVVM\\ModelView\\EscaladorServicio.cs",
-              "RelativeToolTip": "apiRestEscaladores\\MVVM\\ModelView\\EscaladorServicio.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAQwDAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T22:06:03.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainPageVM.cs",
               "DocumentMoniker": "C:\\Users\\Ana\\source\\repos\\apiRestEscaladores\\apiRestEscaladores\\MVVM\\ModelView\\MainPageVM.cs",
               "RelativeDocumentMoniker": "apiRestEscaladores\\MVVM\\ModelView\\MainPageVM.cs",
               "ToolTip": "C:\\Users\\Ana\\source\\repos\\apiRestEscaladores\\apiRestEscaladores\\MVVM\\ModelView\\MainPageVM.cs",
               "RelativeToolTip": "apiRestEscaladores\\MVVM\\ModelView\\MainPageVM.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwCkAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwIEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T20:55:44.876Z",
               "EditorCaption": ""
@@ -75,7 +58,7 @@
               "RelativeDocumentMoniker": "apiRestEscaladores\\MVVM\\View\\MainPage.xaml",
               "ToolTip": "C:\\Users\\Ana\\source\\repos\\apiRestEscaladores\\apiRestEscaladores\\MVVM\\View\\MainPage.xaml",
               "RelativeToolTip": "apiRestEscaladores\\MVVM\\View\\MainPage.xaml",
-              "ViewState": "AgIAADoAAAAAAAAAAADwv1MAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAYwEAAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-21T21:58:19.547Z",
               "EditorCaption": ""

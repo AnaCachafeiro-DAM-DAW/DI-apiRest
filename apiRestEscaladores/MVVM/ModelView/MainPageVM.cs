@@ -66,8 +66,8 @@ namespace apiRestEscaladores.MVVM.ModelView
         }
 
         //  Método para agregar un escalador
-        
-        
+
+
         private async Task AgregarEscalador()
         {
             //var nuevoEscalador = new Escalador
