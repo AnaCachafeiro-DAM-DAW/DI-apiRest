@@ -24,6 +24,18 @@
                     <DataTemplate>
                         <Frame BorderColor="Gray" Padding="10" Margin="5" CornerRadius="10" BackgroundColor="LightGray">
                             <StackLayout>
+                                <!-- Botón para eliminar este escalador -->
+                                <Button Text="EDITAR"      
+                                    FontAttributes="Bold"
+                                    Command="{Binding SeleccionarEscaladorCommand}"
+                                    CommandParameter="{Binding}"
+                                    BackgroundColor="White"
+                                    TextColor="Black"
+                                    Padding="5"
+                                    CornerRadius="15"
+                                    FontSize="14"
+                                    HorizontalOptions="End"/>
+
                                 <!-- Nombre -->
                                 <Label Text="{Binding Name}" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
 
@@ -50,6 +62,18 @@
                                     <Label Text="Federado: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
                                     <Label Text="{Binding Federado}" FontSize="18" TextColor="Black"/>
                                 </StackLayout>
+
+                                <!-- Botón para eliminar este escalador -->
+                                <Button Text="X"
+                                    FontAttributes="Bold"
+                                    Command="{Binding EliminarEscaladorCommand}"
+                                    CommandParameter="{Binding Id}"
+                                    BackgroundColor="Black"
+                                    Padding="5"
+                                    CornerRadius="15"
+                                    FontSize="16"
+                                    HorizontalOptions="End"/>
+
                             </StackLayout>
                         </Frame>
                     </DataTemplate>
@@ -58,6 +82,8 @@
 
             <!-- Formulario para ingresar nuevo escalador -->
             <Label Text="Zona para Añadir Nuevo Escalador:" FontSize="20" FontAttributes="Bold" TextColor="Black" Padding="10" Margin="5"/>
+
+            <!--<Entry Placeholder="Nombre" Text="{Binding EscaladorSeleccionado.Name, Mode=TwoWay}" />-->
 
             <Entry Placeholder="Nombre" Text="{Binding NuevoEscalador.Name}" />
             <Entry Placeholder="Edad" Keyboard="Numeric" Text="{Binding NuevoEscalador.Age}" />
@@ -72,16 +98,18 @@
 
             <!-- Botón para añadir escalador -->
             <Button Text="Añadir Nuevo Escalador"
-                    Command="{Binding AgregarEscaladorCommand}"
+                    Command="{Binding GuardarEscaladorCommand}"
                     BackgroundColor="#6200EE"
-                    Padding="10.5"
+                    Padding="10"
                     CornerRadius="30"
                     FontSize="16"
                     BorderWidth="0"
-                    Margin="10"
+                    Margin="5"
                     HorizontalOptions="Center"
                     VerticalOptions="Center" />
 
         </VerticalStackLayout>
     </ScrollView>
+    
+
 </ContentPage>

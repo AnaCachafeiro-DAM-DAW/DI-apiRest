@@ -84,7 +84,7 @@ namespace apiRestEscaladores.MVVM.ModelView
         {
             try
             {
-                HttpResponseMessage response = await _httpClient.DeleteAsync($"{BaseUrl}/{id}");
+                var response = await _httpClient.DeleteAsync($"{BaseUrl}/{id}");
                 return response.IsSuccessStatusCode;
             }
             catch (Exception ex)
@@ -93,5 +93,7 @@ namespace apiRestEscaladores.MVVM.ModelView
                 return false;
             }
         }
+
+
     }
 }

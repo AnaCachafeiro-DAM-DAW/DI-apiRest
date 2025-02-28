@@ -21,9 +21,15 @@ namespace apiRestEscaladores.MVVM.ModelView
             set
             {
                 _escaladorSeleccionado = value;
-                OnPropertyChanged();
+                OnPropertyChanged(nameof(EscaladorSeleccionado));
+                OnPropertyChanged(nameof(PuedeEliminar)); // Notificar si el botón debe habilitarse
             }
         }
+
+        public bool PuedeEliminar => EscaladorSeleccionado != null;
+
+  
+
 
         public ICommand CargarEscaladoresCommand { get; }
         public ICommand AgregarEscaladorCommand { get; }
@@ -36,7 +42,8 @@ namespace apiRestEscaladores.MVVM.ModelView
             //  Inicialización de los comandos
             CargarEscaladoresCommand = new Command(async () => await CargarEscaladores());
             AgregarEscaladorCommand = new Command(async () => await AgregarEscalador());
-            EditarEscaladorCommand = new Command(async () => await EditarEscalador());
+            EditarEscaladorCommand = new Command<Escalador>(async (escalador) => await EditarEscalador(escalador));
+
             EliminarEscaladorCommand = new Command(async () => await EliminarEscalador());
             ResetearVistaCommand = new Command(() => EscaladorSeleccionado = null);
             NuevoEscalador = new Escalador();
@@ -71,7 +78,7 @@ namespace apiRestEscaladores.MVVM.ModelView
         private async Task AgregarEscalador()
         {
             //var nuevoEscalador = new Escalador
-            ///{
+            //{
             ///  Name = "Ana Cachafeiro",
             //   Age = 45,
             //   MountainGroup = "Grupo Montaña Ensidesa",
@@ -101,30 +108,66 @@ namespace apiRestEscaladores.MVVM.ModelView
         }
 
         //  Método para editar el escalador seleccionado
-        private async Task EditarEscalador()
+        //private async Task EditarEscalador(object sender)
+         private async Task EditarEscalador(Escalador escalador)
         {
-            if (EscaladorSeleccionado == null) return;
+            //Button bt= (Button) sender;
+            //bt.CommandParameter
 
-            EscaladorSeleccionado.Name = "Elia Cachafeiro";
-            bool exito = await _servicio.UpdateEscaladorAsync(EscaladorSeleccionado);
+            if (escalador == null)
+            {
+                Console.WriteLine("Error, escalador es nulo.");
+                return;
+            }
+
+            // Ejemplo de edición
+            //EscaladorSeleccionado.Name = "Elia Cachafeiro";
+
+            bool exito = await _servicio.UpdateEscaladorAsync(escalador);
             if (exito)
             {
-                Console.WriteLine("Escalador editado exitosamente.");
+                Console.WriteLine($"Escalador {escalador.Name} acctualizado correctamente.");
                 await CargarEscaladores();
+            }
+            else
+            {
+                Console.WriteLine("Error al actualizar el escalador.");
             }
         }
 
         //  Método para eliminar el escalador seleccionado
         private async Task EliminarEscalador()
         {
-            if (EscaladorSeleccionado == null) return;
+           // if (EscaladorSeleccionado == null)
+           // {
+           //     Console.WriteLine("No hay escalador seleccionado.");
+           //     return;
+          //  }
 
-            bool exito = await _servicio.DeleteEscaladorAsync(EscaladorSeleccionado.Id);
-            if (exito)
+            try
             {
-                Console.WriteLine("Escalador eliminado exitosamente.");
-                Escaladores.Remove(EscaladorSeleccionado);
+                bool exito = await _servicio.DeleteEscaladorAsync(EscaladorSeleccionado.Id);
+
+                if (exito)
+                {
+                    Console.WriteLine($"Escalador {EscaladorSeleccionado.Name} eliminado exitosamente.");
+
+                    // Eliminar del ObservableCollection
+                    Escaladores.Remove(EscaladorSeleccionado);
+
+                    // Limpiar la selección
+                    EscaladorSeleccionado = null;
+                }
+                else
+                {
+                    Console.WriteLine("Error al eliminar el escalador en el servicio.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Excepción al eliminar escalador: {ex.Message}");
             }
         }
+
     }
 }
