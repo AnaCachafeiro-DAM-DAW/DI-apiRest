@@ -28,7 +28,7 @@ namespace apiRestEscaladores.MVVM.ModelView
 
         public bool PuedeEliminar => EscaladorSeleccionado != null;
 
-  
+
 
 
         public ICommand CargarEscaladoresCommand { get; }
@@ -79,7 +79,7 @@ namespace apiRestEscaladores.MVVM.ModelView
         {
             //var nuevoEscalador = new Escalador
             //{
-            ///  Name = "Ana Cachafeiro",
+            //  Name = "Ana Cachafeiro",
             //   Age = 45,
             //   MountainGroup = "Grupo Montaña Ensidesa",
             //   Experience = 3,
@@ -109,7 +109,7 @@ namespace apiRestEscaladores.MVVM.ModelView
 
         //  Método para editar el escalador seleccionado
         //private async Task EditarEscalador(object sender)
-         private async Task EditarEscalador(Escalador escalador)
+        private async Task EditarEscalador(Escalador escalador)
         {
             //Button bt= (Button) sender;
             //bt.CommandParameter
@@ -138,11 +138,11 @@ namespace apiRestEscaladores.MVVM.ModelView
         //  Método para eliminar el escalador seleccionado
         private async Task EliminarEscalador()
         {
-           // if (EscaladorSeleccionado == null)
-           // {
-           //     Console.WriteLine("No hay escalador seleccionado.");
-           //     return;
-          //  }
+            // if (EscaladorSeleccionado == null)
+            // {
+            //     Console.WriteLine("No hay escalador seleccionado.");
+            //     return;
+            //  }
 
             try
             {

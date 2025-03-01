@@ -98,7 +98,7 @@
 
             <!-- Botón para añadir escalador -->
             <Button Text="Añadir Nuevo Escalador"
-                    Command="{Binding GuardarEscaladorCommand}"
+                    Command="{Binding AgregarEscaladorCommand}"
                     BackgroundColor="#6200EE"
                     Padding="10"
                     CornerRadius="30"
@@ -110,6 +110,6 @@
 
         </VerticalStackLayout>
     </ScrollView>
-    
+
 
 </ContentPage>
