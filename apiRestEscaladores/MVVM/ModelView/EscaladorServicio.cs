@@ -61,6 +61,22 @@ namespace apiRestEscaladores.MVVM.ModelView
         }
 
 
+        // DELETE - Eliminar un escalador
+        public async Task<bool> DeleteEscaladorAsync(string id)
+        {
+            try
+            {
+                HttpResponseMessage response = await _httpClient.DeleteAsync($"{BaseUrl}/{id}");
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al eliminar escalador: {ex.Message}");
+                return false;
+            }
+        }
+
+
         // PUT - Editar un escalador existente
         public async Task<bool> UpdateEscaladorAsync(Escalador escalador)
         {
@@ -79,21 +95,9 @@ namespace apiRestEscaladores.MVVM.ModelView
             }
         }
 
-        // DELETE - Eliminar un escalador
-        public async Task<bool> DeleteEscaladorAsync(string id)
+        internal async Task DeleteEscaladorAsync(int id)
         {
-            try
-            {
-                var response = await _httpClient.DeleteAsync($"{BaseUrl}/{id}");
-                return response.IsSuccessStatusCode;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error al eliminar escalador: {ex.Message}");
-                return false;
-            }
+            throw new NotImplementedException();
         }
-
-
     }
 }

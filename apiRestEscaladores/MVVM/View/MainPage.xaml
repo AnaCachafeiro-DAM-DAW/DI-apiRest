@@ -1,5 +1,6 @@
 ﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:apiRestEscaladores.MVVM.ModelView;assembly=apiRestEscaladores"
              x:Class="apiRestEscaladores.MainPage">
 
     <ScrollView>
@@ -22,68 +23,67 @@
             <CollectionView ItemsSource="{Binding Escaladores}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="Gray" Padding="10" Margin="5" CornerRadius="10" BackgroundColor="LightGray">
-                            <StackLayout>
-                                <!-- Botón para eliminar este escalador -->
-                                <Button Text="EDITAR"      
-                                    FontAttributes="Bold"
-                                    Command="{Binding SeleccionarEscaladorCommand}"
-                                    CommandParameter="{Binding}"
-                                    BackgroundColor="White"
-                                    TextColor="Black"
-                                    Padding="5"
-                                    CornerRadius="15"
-                                    FontSize="14"
-                                    HorizontalOptions="End"/>
+                        <SwipeView>
+                            <!-- Botón para eliminar con Swipe -->
+                            <SwipeView.RightItems>
+                                <SwipeItems Mode="Execute">
+                                    <SwipeItem Text="Eliminar"
+                                               BackgroundColor="Red"
+                                               Command="{Binding Source={RelativeSource AncestorType={x:Type vm:MainPageVM}}, Path=EliminarEscaladorCommand}"
+                                               CommandParameter="{Binding}" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
 
-                                <!-- Nombre -->
-                                <Label Text="{Binding Name}" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                            <Frame BorderColor="Gray" Padding="10" Margin="5" CornerRadius="10" BackgroundColor="LightGray">
+                                <StackLayout>
+                                    <!-- Botón para Editar -->
+                                    <Button Text="EDITAR"
+                                            FontAttributes="Bold"
+                                            Command="{Binding SeleccionarEscaladorCommand}"
+                                            CommandParameter="{Binding}"
+                                            BackgroundColor="White"
+                                            TextColor="Black"
+                                            Padding="5"
+                                            CornerRadius="15"
+                                            FontSize="14"
+                                            HorizontalOptions="End"/>
 
-                                <!-- Edad -->
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="Edad: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
-                                    <Label Text="{Binding Age}" FontSize="18" TextColor="Black"/>
+                                    <!-- Nombre -->
+                                    <Label Text="{Binding Name}" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                    <!-- Edad -->
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Edad: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
+                                        <Label Text="{Binding Age}" FontSize="18" TextColor="Black"/>
+                                    </StackLayout>
+
+                                    <!-- Grupo de montaña -->
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Grupo de Montaña: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
+                                        <Label Text="{Binding MountainGroup}" FontSize="18" TextColor="Black"/>
+                                    </StackLayout>
+
+                                    <!-- Experiencia -->
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Años de experiencia: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
+                                        <Label Text="{Binding Experience}" FontSize="18" TextColor="Black"/>
+                                    </StackLayout>
+
+                                    <!-- Federado -->
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Federado: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
+                                        <Label Text="{Binding Federado}" FontSize="18" TextColor="Black"/>
+                                    </StackLayout>
                                 </StackLayout>
+                            </Frame>
 
-                                <!-- Grupo de montaña -->
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="Grupo de Montaña: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
-                                    <Label Text="{Binding MountainGroup}" FontSize="18" TextColor="Black"/>
-                                </StackLayout>
-
-                                <!-- Experiencia -->
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="Años de experiencia: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
-                                    <Label Text="{Binding Experience}" FontSize="18" TextColor="Black"/>
-                                </StackLayout>
-
-                                <!-- Federado -->
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="Federado: " FontSize="18" FontAttributes="Italic" TextColor="Black"/>
-                                    <Label Text="{Binding Federado}" FontSize="18" TextColor="Black"/>
-                                </StackLayout>
-
-                                <!-- Botón para eliminar este escalador -->
-                                <Button Text="X"
-                                    FontAttributes="Bold"
-                                    Command="{Binding EliminarEscaladorCommand}"
-                                    CommandParameter="{Binding Id}"
-                                    BackgroundColor="Black"
-                                    Padding="5"
-                                    CornerRadius="15"
-                                    FontSize="16"
-                                    HorizontalOptions="End"/>
-
-                            </StackLayout>
-                        </Frame>
+                        </SwipeView>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
             <!-- Formulario para ingresar nuevo escalador -->
             <Label Text="Zona para Añadir Nuevo Escalador:" FontSize="20" FontAttributes="Bold" TextColor="Black" Padding="10" Margin="5"/>
-
-            <!--<Entry Placeholder="Nombre" Text="{Binding EscaladorSeleccionado.Name, Mode=TwoWay}" />-->
 
             <Entry Placeholder="Nombre" Text="{Binding NuevoEscalador.Name}" />
             <Entry Placeholder="Edad" Keyboard="Numeric" Text="{Binding NuevoEscalador.Age}" />
@@ -110,6 +110,5 @@
 
         </VerticalStackLayout>
     </ScrollView>
-
 
 </ContentPage>

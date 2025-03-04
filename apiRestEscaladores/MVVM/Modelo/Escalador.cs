@@ -9,7 +9,7 @@ public class Escalador
     public string MountainGroup { get; set; }
     public int Experience { get; set; }
     public bool Federado { get; set; }
-    public string Id { get; set; }
+    public String Id { get; set; }
 
     public string FederadoTexto
     {
@@ -18,6 +18,8 @@ public class Escalador
             return Federado ? "Sí" : "No";
         }
     }
+
+    
 }
 
 
