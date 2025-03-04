@@ -1,6 +1,7 @@
 ﻿using apiRestEscaladores.MVVM.Modelo;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Text.Json;
 using System.Windows.Input;
 
 namespace apiRestEscaladores.MVVM.ModelView
@@ -10,6 +11,7 @@ namespace apiRestEscaladores.MVVM.ModelView
         private readonly EscaladorServicio _servicio = new();
         public ObservableCollection<Escalador> Escaladores { get; set; } = new();
 
+        // Solo se usa para agregar nuevos escaladores
         public Escalador NuevoEscalador { get; set; }
         private Escalador _escaladorSeleccionado;
 
@@ -29,18 +31,19 @@ namespace apiRestEscaladores.MVVM.ModelView
 
         // Comandos
         public ICommand CargarEscaladoresCommand { get; }
-        public ICommand AgregarEscaladorCommand { get; }
+        public ICommand AgregarOEditarEscaladorCommand { get; }
         public ICommand EliminarEscaladorCommand { get; }
         public ICommand SeleccionarEscaladorCommand { get; }
         public ICommand ResetearVistaCommand { get; }
+
+        public string BotonTexto => EscaladorSeleccionado?.Id != null ? "Editar Escalador" : "Agregar Escalador";
 
         public MainPageVM()
         {
             // Inicialización de los comandos
             CargarEscaladoresCommand = new Command(async () => await CargarEscaladores());
-            AgregarEscaladorCommand = new Command(async () => await AgregarEscalador());
             EliminarEscaladorCommand = new Command<Escalador>(async (escalador) => await EliminarEscalador(escalador));
-
+            AgregarOEditarEscaladorCommand = new Command(async () => await AgregarOEditarEscalador());
             SeleccionarEscaladorCommand = new Command<Escalador>((escalador) =>
             {
                 EscaladorSeleccionado = new Escalador
@@ -53,8 +56,9 @@ namespace apiRestEscaladores.MVVM.ModelView
                     Federado = escalador.Federado
                 };
             });
+            ResetearVistaCommand = new Command(() => ResetearVista());
 
-            ResetearVistaCommand = new Command(() => EscaladorSeleccionado = null);
+            // Inicialización de NuevoEscalador
             NuevoEscalador = new Escalador();
         }
 
@@ -63,10 +67,14 @@ namespace apiRestEscaladores.MVVM.ModelView
         {
             try
             {
+                // Obtener la lista actualizada desde el servicio MockAPI
                 var lista = await _servicio.GetEscaladoresAsync();
                 if (lista != null && lista.Count > 0)
                 {
+                    // Limpiar la lista local antes de agregar los nuevos datos
                     Escaladores.Clear();
+
+                    // Agregar los escaladores de la respuesta del servidor
                     foreach (var item in lista)
                     {
                         Escaladores.Add(item);
@@ -98,6 +106,46 @@ namespace apiRestEscaladores.MVVM.ModelView
             }
         }
 
+        // Método común para agregar o editar un escalador
+        private async Task AgregarOEditarEscalador()
+        {
+            if (EscaladorSeleccionado != null)
+            {
+                if (!string.IsNullOrEmpty(EscaladorSeleccionado.Id))
+                {
+                    // Editar el escalador
+                    var exito = await _servicio.UpdateEscaladorAsync(EscaladorSeleccionado);
+                    if (exito)
+                    {
+                        // Recargamos la lista después de editar
+                        await CargarEscaladores();
+                        Console.WriteLine($"Escalador con ID {EscaladorSeleccionado.Id} editado exitosamente.");
+                        ResetearVista(); // Limpiamos el formulario
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error al editar escalador.");
+                    }
+                }
+                else
+                {
+                    // Agregar un nuevo escalador
+                    var exito = await _servicio.AddEscaladorAsync(EscaladorSeleccionado);
+                    if (exito)
+                    {
+                        // Recargamos la lista después de agregar
+                        await CargarEscaladores();
+                        Console.WriteLine("Escalador agregado exitosamente.");
+                        ResetearVista(); // Limpiamos el formulario
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error al agregar escalador.");
+                    }
+                }
+            }
+        }
+
         // Método para eliminar el escalador seleccionado
         private async Task EliminarEscalador(Escalador escalador)
         {
@@ -116,6 +164,14 @@ namespace apiRestEscaladores.MVVM.ModelView
             {
                 Console.WriteLine("Error al eliminar escalador.");
             }
+        }
+
+        // Método para resetear el formulario
+        private void ResetearVista()
+        {
+            // Limpiamos el formulario, ya sea con el objeto NuevoEscalador o EscaladorSeleccionado
+            EscaladorSeleccionado = null; // Resetear la vista
+            NuevoEscalador = new Escalador(); // Limpiamos los datos para agregar uno nuevo
         }
     }
 }
