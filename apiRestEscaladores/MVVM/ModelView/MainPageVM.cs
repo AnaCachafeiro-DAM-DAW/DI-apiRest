@@ -139,10 +139,15 @@ namespace apiRestEscaladores.MVVM.ModelView
         }
 
         // Método para eliminar un escalador
+        // Método para eliminar un escalador
         private async Task EliminarEscalador(Escalador escalador)
         {
-            // Si no hay un escalador seleccionado, no hace nada
-            if (escalador == null) return;
+            // Verifica si el escalador tiene un ID válido
+            if (escalador == null || string.IsNullOrEmpty(escalador.Id))
+            {
+                Console.WriteLine("Escalador no válido o sin ID.");
+                return;
+            }
 
             // Muestra un cuadro de confirmación antes de eliminar
             bool confirmar = await Application.Current.MainPage.DisplayAlert("Confirmar", $"¿Eliminar a {escalador.Name}?", "Sí", "No");
@@ -154,14 +159,16 @@ namespace apiRestEscaladores.MVVM.ModelView
             if (exito)
             {
                 // Si la eliminación es exitosa:
-                await CargarEscaladores(); // Recarga la lista
-                ResetearVista(); // Limpia la selección y el formulario
+                Console.WriteLine($"Escalador {escalador.Name} eliminado.");
+                await CargarEscaladores(); // Recarga la lista de escaladores
+                ResetearVista(); // Limpia el formulario
             }
             else
             {
                 Console.WriteLine("Error al eliminar escalador."); // Si falla, muestra un mensaje
             }
         }
+
 
         // Método para limpiar el formulario y la selección actual
         private void ResetearVista()

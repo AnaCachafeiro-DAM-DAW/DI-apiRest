@@ -3,7 +3,8 @@
              x:Class="apiRestEscaladores.MainPage"
              Title="Gestión de Escaladores">
 
-    <VerticalStackLayout Padding="15" Spacing="15">
+    <ScrollView>
+    <StackLayout Padding="15" Spacing="15">
 
         <!-- Selector de Escalador -->
         <Picker Title="SELECCIONA UN ESCALADOR"
@@ -18,8 +19,10 @@
         <Entry Placeholder="Experiencia (Años)" Keyboard="Numeric" Text="{Binding EscaladorEditable.Experience}" />
 
         <!-- Switch para Federado -->
-        <Label Text="Federado" />
-        <Switch IsToggled="{Binding EscaladorEditable.Federado}" />
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Federado:" />
+                <Switch IsToggled="{Binding EscaladorEditable.Federado}" />
+            </StackLayout> 
 
         <!-- Botón de Agregar/Editar -->
         <Button Text="{Binding BotonTexto}"
@@ -42,22 +45,25 @@
                 Command="{Binding ResetearVistaCommand}" />
 
         <!-- Lista de Escaladores -->
-        <Label Text="Lista Detallada de Escaladores:" FontAttributes="Bold" TextColor="#6200EE" FontSize="Small" />
-        <CollectionView ItemsSource="{Binding Escaladores}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout Padding="5">
-                        <Label Text="{Binding Name}" FontAttributes="Bold" />
-                        <Label Text="{Binding MountainGroup}" />
-                        <Label Text="{Binding Age, StringFormat='Edad: {0} años'}" />
-                        <Label Text="{Binding Experience, StringFormat='Experiencia: {0} años'}" />
-                        <Label Text="{Binding Federado, StringFormat='Federado: {0}'}" />
-                       
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+            <Label Text="Lista Detallada de Escaladores:" FontAttributes="Bold" TextColor="#6200EE" FontSize="Medium"/>
 
-    </VerticalStackLayout>
-
+        <!-- ScrollView que envuelve el CollectionView -->
+        
+            <CollectionView ItemsSource="{Binding Escaladores}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="5">
+                            <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="Medium"/>
+                            <Label Text="{Binding MountainGroup, StringFormat='Grupo Montaña: {0}'}" />
+                            <Label Text="{Binding Age, StringFormat='Edad: {0} años'}" />
+                            <Label Text="{Binding Experience, StringFormat='Experiencia: {0} años'}" />
+                            <Label Text="{Binding Federado, StringFormat='Federado: {0}'}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+      
+    </StackLayout>
+        
+    </ScrollView>
 </ContentPage>
